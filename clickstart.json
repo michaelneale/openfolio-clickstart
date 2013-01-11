@@ -1,0 +1,33 @@
+{
+    "id": "openfolio",
+    "name": "Drupal clickstart with openfolio",
+    "source": "github",
+    "description": "A Drupal installation on steroids!",
+    "doc-url": "https://github.com/benjaminsavoy/openfolio-clickstart/blob/master/README.md",
+    "supported-by" : "community", 
+    "order" : 5,
+
+    "disabled" : true,
+    "databases": [
+        {
+            "type": "mysql",
+            "alias": "drupal"
+        }
+    ],
+    "runtime": {
+        "type": "drupal",
+        "app-parameters" : { 
+            "runtime.PLUGIN.SRC.drupal": "http://cloudbees-clickstack.s3.amazonaws.com/testing/drupal-plugin.zip",
+            "runtime.email": "admin@example.com",
+            "runtime.name": "Drupal ClickStart",
+            "runtime.user": "test",
+            "runtime.pass": "test",
+            "runtime.profile": "openfolio"
+        }
+    },
+    "build-with-jenkins": {
+        "template": {
+            "type": "https://raw.github.com/benjaminsavoy/openfolio-clickstart/master/config.xml"
+        }
+    }
+}

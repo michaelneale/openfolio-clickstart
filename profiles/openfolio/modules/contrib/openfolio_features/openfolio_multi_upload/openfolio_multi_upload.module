@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Openfolio Multi Upload feature.
+ */
+
+include_once 'openfolio_multi_upload.features.inc';

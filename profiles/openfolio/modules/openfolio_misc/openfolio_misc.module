@@ -1,0 +1,23 @@
+<?php
+/**
+ * Implements hook_block_info().
+ */
+function openfolio_misc_block_info() {
+  $blocks['powered-by'] = array(
+    'info' => t('Powered by Openfolio'),
+  );
+
+  return $blocks;
+}
+/**
+ * Implements hook_block_view().
+ */
+function openfolio_misc_block_view($delta = '') {
+  switch ($delta) {
+    case 'powered-by':
+      $block['content'] = t('Powered by') . ' ' . l('Openfolio', 'http://drupal.org/project/openfolio');
+      $block['subject'] = NULL;
+      return $block;
+      break;
+  }
+}

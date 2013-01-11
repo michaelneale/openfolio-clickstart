@@ -1,0 +1,13 @@
+name = Openfolio Content
+description = Sample content for Openfolio
+core = 7.x
+package = OpenFolio
+dependencies[] = node_export
+
+
+; Information added by drupal.org packaging script on 2012-10-14
+version = "7.x-1.0-alpha1"
+core = "7.x"
+project = "openfolio"
+datestamp = "1350243410"
+

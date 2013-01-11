@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenFolio Features feature.
+ */
+
+include_once 'openfolio_features.features.inc';

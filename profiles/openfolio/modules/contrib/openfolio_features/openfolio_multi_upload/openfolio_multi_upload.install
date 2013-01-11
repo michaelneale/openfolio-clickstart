@@ -1,0 +1,24 @@
+<?php
+/**
+ * Implements hook_install().
+ * 
+ * Create menu link directly.  Can't export link in feature b/c of this issue: http://drupal.org/node/927566
+ */
+function openfolio_multi_upload_install() {
+  $links = menu_load_links('management');
+  foreach ($links as $link) {
+    if ($link['link_path'] == 'admin') {
+      $parent = $link;
+    }
+  }
+  
+  $item = array(
+      'link_title' => t('Multiple Image Upload'),
+      'link_path' => 'admin/content/media/bulk_upload',
+      'menu_name' => 'management',
+      'weight' => 45,
+      'plid' => $parent['mlid'],
+      
+  );
+  menu_link_save($item);
+}

@@ -1,0 +1,27 @@
+name = Openfolio Multi Upload
+description = Upload multi images at once
+core = 7.x
+package = Openfolio
+php = 5.2.4
+version = 7.x-0.2
+project = openfolio_multi_upload
+dependencies[] = bulk_media_upload
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = menu
+dependencies[] = openfolio_features
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[menu_links][] = management:admin/content/media/bulk_upload
+features[user_permission][] = bulk upload media
+features[variable][] = bulk_media_upload_bundle
+features[variable][] = bulk_media_upload_entity_type
+features[variable][] = bulk_media_upload_mediafield
+
+
+; Information added by drush on 2012-10-14
+version = ""
+project = "openfolio_features"
+datestamp = "1350243415"
+
