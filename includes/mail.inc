@@ -181,7 +181,9 @@ function drupal_mail($module, $key, $to, $language, $params = array(), $from = N
       $message['result'] = $system->mail($message);
       // Log errors.
       if (!$message['result']) {
-        watchdog('mail', 'Error sending e-mail (from %from to %to).', array('%from' => $message['from'], '%to' => $message['to']), WATCHDOG_ERROR);
+        /* CloudBees doesn't support mail sending yet. Commenting next line to avoid the error stopping processes.
+        * watchdog('mail', 'Error sending e-mail (from %from to %to).', array('%from' => $message['from'], '%to' => $message['to']), WATCHDOG_ERROR);
+        */
         drupal_set_message(t('Unable to send e-mail. Contact the site administrator if the problem persists.'), 'error');
       }
     }
