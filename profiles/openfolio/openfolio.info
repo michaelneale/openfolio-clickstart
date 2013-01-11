@@ -76,6 +76,9 @@ dependencies[] = rules
 dependencies[] = openfolio_features
 dependencies[] = openfolio_multi_upload
 dependencies[] = features
+; REST
+dependencies[] = services
+dependencies[] = rest_server
 ; AWS
 dependencies[] = amazons3
 dependencies[] = awssdk
