@@ -11,6 +11,7 @@ Then, you can commit changes to git, and they will be published automatically. E
 
 ## Modifications from original:
 
-sites/default/settings.php added
-includes/mail.inc changed (lines 183-188)
-added modules and custom openfolio installation profile.
+- sites/default/settings.php added
+- includes/mail.inc changed (lines 183-188)
+- Added modules and custom openfolio installation profile.
+- Spyc added to rest server in services module
