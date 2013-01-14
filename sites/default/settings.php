@@ -258,7 +258,8 @@ $databases['default']['default'] = array(
     'username' => getenv('MYSQL_USERNAME_DRUPAL'),
     'password' => getenv('MYSQL_PASSWORD_DRUPAL'),
     'host' => getenv('MYSQL_HOST_DRUPAL'),
-	'prefix' => 'drupal_',
+    'port' => getenv('MYSQL_PORT_DRUPAL'),
+    'prefix' => 'drupal_',
 );
 
 /**
