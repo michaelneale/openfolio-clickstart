@@ -35,7 +35,13 @@
      {
       "name" : "newrelic",
       "plan" : "standard",
-      "settings" : {}
-     }        
+      "settings" : {},
+      "resources" : [
+            {
+                "type" : "monitoring",
+                "settings" : {}
+            }
+         ]
+      }        
     ]
 }
