@@ -29,5 +29,13 @@
         "template": {
             "type": "https://raw.github.com/benjaminsavoy/openfolio-clickstart/master/config.xml"
         }
-    }
+    },
+    
+    "services" : [
+     {
+      "name" : "newrelic",
+      "plan" : "standard",
+      "settings" : {}
+     }        
+    ]
 }
