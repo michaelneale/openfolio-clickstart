@@ -39,6 +39,7 @@
       "resources" : [
             {
                 "type" : "monitoring",
+                "alias" : "mon",
                 "settings" : {}
             }
          ]
