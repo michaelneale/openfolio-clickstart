@@ -38,8 +38,7 @@
       "settings" : {},
       "resources" : [
             {
-                "type" : "monitoring",
-                "alias" : "mon",
+                "type" : "monitoring",                
                 "settings" : {}
             }
          ]
